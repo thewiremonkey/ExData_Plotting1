@@ -3,7 +3,7 @@ I created one additional script called getdata.R which looks to see if the unzip
 
 filedata is cleaned and the Date and Time column are concatenated and transformed into a timestamp in POSIXlt class.
 
-After filedata is created, the remaining files <code>plot1.R</code>, <code>plot1.R</code>, etc. are able to use filedata to create another local variable called "file" which is then used for plotting.  This speeds up the process tremendously.
+After filedata is created, the remaining files <code>plot1.R</code>, <code>plot2.R</code>, etc. are able to use filedata to create another local variable called "file" which is then used for plotting.  This speeds up the process tremendously.
 
 ## Introduction
 
