@@ -1,3 +1,5 @@
+if(!exists("filedata")){source("getdata.R")}
+
 file<-filedata
 
 png(filename = "plot4.png")

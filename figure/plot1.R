@@ -1,5 +1,5 @@
+if(!exists("filedata")){source("getdata.R")}
 
-#source("getdata.R")
 file<-filedata
 
 png(filename = "plot1.png", width = 480, height = 480)
