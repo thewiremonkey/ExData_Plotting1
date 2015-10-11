@@ -1,7 +1,10 @@
+#check to see if data has been downloaded, tidied and saved into the global variable "filedata"
 if(!exists("filedata")){source("getdata.R")}
 
+#copy the #filedata data set into the local variable "file."  This preserves the original tidied data set for future use.
 file<-filedata
 
+#open the graphics device
 png(filename = "plot4.png")
 
 #frame for four plots in order: top left, top right, bottom left, bottom right
@@ -23,6 +26,7 @@ legend("topright", col = c("black", "red", "blue"), legend = c("Sub_metering_1",
 
 
 #forth plot lower right corner
+plot(file$timestamp, file$Global_reactive_power, type = "l", xlab = "datetime", ylab="Global Reactive Power ")
 
-plot(file$timestamp, file$Global_reactive_power, type = "l", xlab = "datetime", ylab="Global Reactive Power ") 
+#turn off graphic device
 dev.off()
